@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body class="bg-img">
+    <div >
+        <form onsubmit="saveToDatabase()" method="POST">
+            <div>
+                <h2 style="text-align: center;">Book a call</h2>
+                <hr>
+                <div >
+                    <input type="text" id="fname" name="Name" autocomplete="on" placeholder="Name Here"
+                     > <br>
+                    <label for="fname"><b>Name:</b></label><br>
+                </div>
+                <br>
+                <label for="email1"><b>Email:</b></label><br>
+                <input type="email" id="email1" name="Email" autocomplete="on" 
+                    placeholder="Email"><br>
+
+                <br>
+                <label for="phone" ><b>Phone:</b></label><br>
+                <input type="tel" id="phone" name="Phone" autocomplete="on" 
+                    placeholder="Telephone Number">
+
+                <div >
+                    <button type="submit" id="call" >GET A CALL</button>
+                </div>
+            </div>
+        </form>
+        <hr>
+    </div>
+</body>
+<script src="dataToCloud.js"></script>
+
+</html>
